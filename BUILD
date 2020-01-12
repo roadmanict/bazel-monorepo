@@ -1,1 +1,4 @@
-exports_files(["tsconfig.json"], visibility = ["//visibility:public"])
+exports_files(
+    ["nodejs/tsconfig.json"],
+    visibility = ["//visibility:public"],
+)
