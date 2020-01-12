@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@bazel/typescript": "1.0.1",
-    "@types/node": "12.12.24",
+    "@types/node": "13.1.6",
     "grpc": "1.24.2",
     "typescript": "3.7.4"
   },
