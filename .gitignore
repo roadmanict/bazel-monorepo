@@ -2,4 +2,6 @@
 node_modules/
 dist/
 /bazel-*
+
 /bazel.rc
+.DS_Store

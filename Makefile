@@ -1,7 +1,7 @@
 .PHONY: build
 
 install:
-	npm install
+	npm install --prefix nodejs
 
 build:
 	bazel build //...
