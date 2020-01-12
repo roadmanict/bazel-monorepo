@@ -10,8 +10,3 @@ ts_library(
         "//dependency-injection:dependency-injection",
     ],
 )
-
-filegroup(
-    name = "grpc-server.js",
-    srcs = ["grpc-server"],
-)

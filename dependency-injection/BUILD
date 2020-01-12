@@ -9,8 +9,3 @@ ts_library(
     ],
     deps = [],
 )
-
-filegroup(
-    name = "dependency-injection.js",
-    srcs = ["dependency-injection"],
-)
