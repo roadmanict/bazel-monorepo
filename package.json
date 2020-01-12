@@ -1,0 +1,23 @@
+{
+  "name": "bazel-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bazel:format": "find . -type f \\( -name \"*.bzl\" -or -name WORKSPACE -or -name BUILD -or -name BUILD.bazel \\) ! -path \"*/node_modules/*\" | xargs buildifier -v --warnings=attr-cfg,attr-license,attr-non-empty,attr-output-default,attr-single-file,constant-glob,ctx-actions,ctx-args,depset-iteration,depset-union,dict-concatenation,duplicated-name,filetype,git-repository,http-archive,integer-division,load,load-on-top,native-build,native-package,out-of-order-load,output-group,package-name,package-on-top,positional-args,redefined-variable,repository-name,same-origin-load,string-iteration,unsorted-dict-items,unused-variable",
+    "bazel:lint": "npm run bazel:format --lint=warn",
+    "bazel:lint-fix": "npm run bazel:format --lint=fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bazel/buildifier": "^0.29.0",
+    "@bazel/ibazel": "^0.11.1",
+    "@bazel/typescript": "^1.0.1",
+    "@types/node": "^12.12.24",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "grpc": "^1.24.2"
+  }
+}
