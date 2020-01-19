@@ -9,7 +9,7 @@
   "devDependencies": {
     "@bazel/typescript": "1.1.0",
     "@types/node": "12.12.25",
-    "typescript": "3.7.4"
+    "typescript": "3.7.5"
   },
   "dependencies": {
     "grpc": "1.24.2"
