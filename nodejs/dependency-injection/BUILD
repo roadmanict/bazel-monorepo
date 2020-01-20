@@ -9,6 +9,5 @@ ts_library(
     srcs = [
         "main.ts",
     ],
-    tsconfig = "//:nodejs/tsconfig.json",
     deps = [],
 )
