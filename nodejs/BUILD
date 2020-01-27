@@ -1,3 +1,3 @@
 exports_files(
-    srcs = ["tsconfig.json"],
+    srcs = ["tsconfig-bazel.json"],
 )
