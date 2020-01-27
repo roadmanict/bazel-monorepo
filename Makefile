@@ -2,6 +2,8 @@
 
 default: build
 
+all: clean install build
+
 clean:
 	bazel clean
 	rm -rf nodejs/node_modules
