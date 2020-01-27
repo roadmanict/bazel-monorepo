@@ -1,4 +1,4 @@
-import {DI} from 'roadmanict_nodejs/nodejs/dependency-injection';
+import {DI} from 'roadmanict/nodejs/dependency-injection';
 
 (() => {
     console.log(DI);

@@ -19,3 +19,6 @@ lint:
 
 build: lint
 	bazel build //...
+
+watch: lint
+	ibazel build //...

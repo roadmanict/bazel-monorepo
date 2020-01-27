@@ -1,6 +1,8 @@
 workspace(
-    name = "roadmanict_nodejs",
-    managed_directories = {"@npm": ["nodejs/node_modules"]},
+    name = "roadmanict",
+    managed_directories = {
+        "@npm": ["nodejs/node_modules"],
+    },
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")

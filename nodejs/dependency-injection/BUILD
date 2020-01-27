@@ -1,5 +1,5 @@
 package(
-    default_visibility = ["//visibility:public"],
+    default_visibility = ["//nodejs:__subpackages__"],
 )
 
 load("@npm_bazel_typescript//:index.bzl", "ts_library")
@@ -9,6 +9,5 @@ ts_library(
     srcs = glob(["*.ts"]),
     deps = [
         "@npm//@types/node",
-        "@npm//typescript",
     ],
 )
