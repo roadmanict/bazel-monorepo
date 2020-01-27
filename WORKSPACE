@@ -1,5 +1,5 @@
 workspace(
-    name = "roadman_nodejs",
+    name = "roadmanict_nodejs",
     managed_directories = {"@npm": ["nodejs/node_modules"]},
 )
 
