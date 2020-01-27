@@ -15,12 +15,22 @@ jobs:
           path: "/home/runner/.cache/bazel"
           key: bazel
 
+      - name: Mount npm cache
+        uses: actions/cache@v1
+        with:
+          path: "/home/runner/.npm"
+          key: npm
+
       - name: Install bazelisk
         run: |
           curl -LO "https://github.com/bazelbuild/bazelisk/releases/download/v1.2.1/bazelisk-linux-amd64"
           mkdir -p "${GITHUB_WORKSPACE}/bin/"
           mv bazelisk-linux-amd64 "${GITHUB_WORKSPACE}/bin/bazel"
           chmod +x "${GITHUB_WORKSPACE}/bin/bazel"
+
+      - name: Install npm dependencies
+        run: |
+          npm ci --prefix nodejs
 
       - name: Build
         run: |
