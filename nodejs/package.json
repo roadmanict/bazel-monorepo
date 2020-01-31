@@ -7,7 +7,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@bazel/typescript": "1.2.0",
+    "@bazel/typescript": "1.2.4",
     "@types/node": "12.12.26",
     "typescript": "3.7.5"
   },
