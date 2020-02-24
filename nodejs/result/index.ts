@@ -8,6 +8,6 @@ export class ErrorResult<T> {
 
 export type Result<SuccessType = void, ErrorType = void> = SuccessResult<SuccessType> | ErrorResult<ErrorType>;
 
-export const createSuccessResult = <T>(success: T) => new SuccessResult(success);
+export const createSuccessResult = <T>(success: T): SuccessResult<T> => new SuccessResult(success);
 
-export const createErrorResult = <T>(error: T) => new ErrorResult(error);
+export const createErrorResult = <T>(error: T): ErrorResult<T> => new ErrorResult(error);
