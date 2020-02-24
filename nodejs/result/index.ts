@@ -6,7 +6,7 @@ export class ErrorResult<T> {
     public constructor(public readonly error: T) {}
 }
 
-export type Result<SuccessType = void, ErrorType = void> = SuccessResult<SuccessType> | ErrorResult<ErrorType>;
+export type Result<SuccessType = String, ErrorType = void> = SuccessResult<SuccessType> | ErrorResult<ErrorType>;
 
 export const createSuccessResult = <T>(success: T): SuccessResult<T> => new SuccessResult(success);
 

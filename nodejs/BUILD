@@ -1,3 +1,7 @@
 exports_files(
-    srcs = ["tsconfig-bazel.json"],
+    srcs = [
+        ".eslintignore",
+        ".eslintrc.js",
+        "tsconfig-bazel.json",
+    ],
 )
