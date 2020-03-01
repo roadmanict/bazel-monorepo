@@ -1,0 +1,33 @@
+---
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secret_pw_shh
+      MYSQL_DATABASE: roadman_wp_vogel
+      MYSQL_USER: roadman_wp_vogel
+      MYSQL_PASSWORD: devpass
+    ports:
+      - "9906:3306"
+  web:
+    build: .
+    environment:
+      DB_NAME: roadman_wp_vogel
+      DB_USER: roadman_wp_vogel
+      DB_PASSWORD: devpass
+      DB_HOST: wpb_vogelsangh_dwingeloo_db_1:3306
+      WP_HOME: http://localhost:8100
+      WP_SITEURL: http://localhost:8100/wp
+      S3_UPLOADS_BUCKET: vogelsangh-dwingeloo
+      S3_UPLOADS_KEY: AKIAVWKIO65TZU6Y4EEC
+      S3_UPLOADS_SECRET: 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
+      S3_UPLOADS_REGION: eu-west-1
+      S3_UPLOADS_BUCKET_URL: https://d2si9870yfksnu.cloudfront.net
+    depends_on:
+      - db
+    ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
