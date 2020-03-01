@@ -23,3 +23,4 @@ update_configs:
           update_type: "semver:minor"
   - package_manager: "docker"
     directory: "/wordpress"
+    update_schedule: "daily"
