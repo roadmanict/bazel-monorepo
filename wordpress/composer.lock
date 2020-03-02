@@ -1346,15 +1346,15 @@
         },
         {
             "name": "wpackagist-plugin/goolytics-simple-google-analytics",
-            "version": "1.0.5",
+            "version": "1.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/goolytics-simple-google-analytics/",
-                "reference": "tags/1.0.5"
+                "reference": "tags/1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/goolytics-simple-google-analytics.1.0.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/goolytics-simple-google-analytics.1.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
