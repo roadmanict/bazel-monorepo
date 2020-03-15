@@ -37,6 +37,7 @@ jobs:
           "${GITHUB_WORKSPACE}/bin/bazel" build //nodejs/...
 
   build-wordpress:
+    needs: build-nodejs
     runs-on: ubuntu-latest
 
     steps:
