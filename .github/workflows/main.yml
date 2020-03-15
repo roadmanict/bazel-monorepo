@@ -63,4 +63,5 @@ jobs:
           chmod +x "${GITHUB_WORKSPACE}/bin/bazel"
 
       - uses: php-actions/composer@v1
-        command: composer install -d wordpress
+        with:
+          command: composer install -d wordpress
