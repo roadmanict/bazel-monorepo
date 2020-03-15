@@ -40,8 +40,12 @@ jobs:
     needs: build-nodejs
     runs-on: ubuntu-latest
 
+    env:
+      working-directory: ./wordpress
+
     steps:
       - uses: actions/checkout@v2
+
       - name: Cache PHP dependencies
         uses: actions/cache@v1
         with:
@@ -50,5 +54,3 @@ jobs:
 
       - name: Install Wordpress dependencies
         uses: php-actions/composer@v1
-        with:
-          command: install -d ./wordpress
