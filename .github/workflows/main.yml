@@ -50,4 +50,8 @@ jobs:
 
       - name: Install Wordpress dependencies
         uses: php-actions/composer@v1
-        working-directory: ./wordpress
+        with:
+          command:
+            - install
+            - -d
+            - ./wordpress
