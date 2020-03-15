@@ -52,7 +52,7 @@ jobs:
       - name: Cache PHP dependencies
         uses: actions/cache@v1
         with:
-          path: vendor
+          path: wordpress/vendor
           key: ${{ runner.OS }}-wordpress-build-${{ hashFiles('**/composer.lock') }}
 
       - name: Install bazelisk
@@ -63,3 +63,4 @@ jobs:
           chmod +x "${GITHUB_WORKSPACE}/bin/bazel"
 
       - uses: php-actions/composer@v1
+        command: composer install -d wordpress
