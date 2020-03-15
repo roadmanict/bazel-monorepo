@@ -62,6 +62,7 @@ jobs:
           mv bazelisk-linux-amd64 "${GITHUB_WORKSPACE}/bin/bazel"
           chmod +x "${GITHUB_WORKSPACE}/bin/bazel"
 
-      - uses: php-actions/composer@v1
+      - name: Install Wordpress dependencies
+        uses: php-actions/composer@v1
         with:
-          command: composer install -d wordpress
+          command: install -d wordpress
