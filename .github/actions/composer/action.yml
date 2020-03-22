@@ -12,11 +12,10 @@ runs:
   using: 'docker'
   image: 'composer:latest'
   args:
-    - exec
     - install
+    - --no-progress
     - -d
     - wordpress
-    - --no-progress
 branding:
   icon: 'package'
   color: 'purple'
