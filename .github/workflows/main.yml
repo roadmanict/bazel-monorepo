@@ -53,4 +53,4 @@ jobs:
           key: ${{ runner.OS }}-wordpress-build-${{ hashFiles('**/composer.lock') }}
 
       - name: Install Wordpress dependencies
-        uses: ./.github/actions/composer.yml
+        uses: ./.github/actions/composer
