@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    paths-ignore:
+    paths:
       - 'nodejs/**'
 
 jobs:
@@ -37,26 +37,3 @@ jobs:
       - name: Build
         run: |
           "${GITHUB_WORKSPACE}/bin/bazel" build //nodejs/...
-
-  build-wordpress:
-    runs-on: ubuntu-latest
-
-    env:
-      working-directory: ./wordpress
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Cache PHP dependencies
-        uses: actions/cache@v1
-        with:
-          path: wordpress/vendor
-          key: ${{ runner.OS }}-wordpress-build-${{ hashFiles('wordpress/**/composer.lock') }}
-
-      - name: Install Wordpress dependencies
-        uses: ./.github/actions/composer
-#      - name: Upload wordpress base artifact
-#        uses: actions/upload-artifact@v1
-#        with:
-#          name: wordpress
-#          path:
