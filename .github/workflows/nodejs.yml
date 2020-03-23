@@ -2,6 +2,10 @@ on:
   push:
     paths:
       - 'nodejs/**'
+      - '.bazelignore'
+      - '.bazelversion'
+      - 'BUILD'
+      - 'WORKSPACE'
 
 jobs:
   build-nodejs:

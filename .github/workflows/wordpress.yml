@@ -2,6 +2,10 @@ on:
   push:
     paths:
       - 'wordpress/**'
+      - '.bazelignore'
+      - '.bazelversion'
+      - 'BUILD'
+      - 'WORKSPACE'
 
 jobs:
   build-wordpress:
