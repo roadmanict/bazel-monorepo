@@ -8,7 +8,7 @@ on:
       - 'WORKSPACE'
 
 jobs:
-  build-wordpress:
+  wordpress-build:
     runs-on: ubuntu-latest
 
     steps:

@@ -8,7 +8,7 @@ on:
       - 'WORKSPACE'
 
 jobs:
-  build-nodejs:
+  nodejs-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
