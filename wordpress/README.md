@@ -66,9 +66,3 @@ Keep track of development and community news.
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
 * Listen to the [Roots Radio podcast](https://roots.io/podcast/)
-
-## Revert database backup
-
-```sql
-docker exec -i wpb_vogelsangh_dwingeloo_db_1 sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < ./roadman_wp_vogel.sql
-```
