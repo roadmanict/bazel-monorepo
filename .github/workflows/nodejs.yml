@@ -1,7 +1,9 @@
 name: CI
 
 on:
-  push: {}
+  push:
+    paths-ignore:
+      - 'nodejs/**'
 
 jobs:
   build-nodejs:
@@ -37,7 +39,6 @@ jobs:
           "${GITHUB_WORKSPACE}/bin/bazel" build //nodejs/...
 
   build-wordpress:
-    needs: build-nodejs
     runs-on: ubuntu-latest
 
     env:
@@ -54,3 +55,8 @@ jobs:
 
       - name: Install Wordpress dependencies
         uses: ./.github/actions/composer
+#      - name: Upload wordpress base artifact
+#        uses: actions/upload-artifact@v1
+#        with:
+#          name: wordpress
+#          path:
