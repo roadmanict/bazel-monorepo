@@ -32,6 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release_name: Wordpress Release ${{ github.sha }}
+          tag_name: wordpress-${{ github.sha }}
           draft: false
           prerelease: false
 
