@@ -442,10 +442,10 @@
         },
         {
             "name": "koodimonni-language/nl_nl",
-            "version": "5.3.2",
+            "version": "5.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.3.2/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.4/nl_NL.zip"
             },
             "require": {
                 "koodimonni-plugin-language/akismet-nl_nl": "*",
@@ -511,10 +511,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-nl_nl",
-            "version": "3.9.2",
+            "version": "4.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/3.9.2/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/4.0.1/nl_NL.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -606,10 +606,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentysixteen-nl_nl",
-            "version": "2.0",
+            "version": "2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.0/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.1/nl_NL.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -644,10 +644,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentythirteen-nl_nl",
-            "version": "2.9",
+            "version": "3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/2.9/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.0/nl_NL.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
