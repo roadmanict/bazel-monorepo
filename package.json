@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/roadmanict/bazel-monorepo#readme",
   "dependencies": {
+    "@bazel/jasmine": "1.5.0",
     "grpc": "1.24.2",
     "typedi": "0.8.0"
   },

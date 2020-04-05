@@ -1,0 +1,12 @@
+schemaVersion: 2.0.0
+
+metadataTest:
+  exposedPorts: ["80"]
+
+fileExistenceTests:
+  - name: 'txt_file_exists'
+    path: '/var/www/html/.htaccess'
+    shouldExist: true
+  - name: 'txt_file_exists'
+    path: '/var/www/html/composer.json'
+    shouldExist: true

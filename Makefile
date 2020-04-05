@@ -20,3 +20,10 @@ build: lint
 
 watch: lint
 	@npx ibazel build //...
+
+test: build
+	@npx bazel test //...
+
+run_wordpress:
+	@npx bazel run wordpress:base_wordpress
+	@docker run -p 80:80 bazel/wordpress:base_wordpress
