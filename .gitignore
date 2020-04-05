@@ -1,5 +1,6 @@
 .idea/
 /bazel-*
+node_modules/
 
 /bazel.rc
 .DS_Store
