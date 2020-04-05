@@ -1,5 +1,11 @@
 # bazel-monorepo
 ## Dependencies
+* NodeJS (see .nvmrc for version)
 ```bash
-$ brew install bazel buildifier
+$ make install
+```
+
+## Build
+```bash
+$ make build
 ```

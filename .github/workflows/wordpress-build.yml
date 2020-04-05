@@ -5,7 +5,8 @@ on:
     paths:
       - 'wordpress/**'
       - '.bazelignore'
-      - '.bazelversion'
+      - 'package.json'
+      - 'package-lock.json'
       - 'BUILD'
       - 'WORKSPACE'
 
