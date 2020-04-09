@@ -24,7 +24,7 @@
   "devDependencies": {
     "@bazel/bazel": "2.1.0",
     "@bazel/buildifier": "2.2.1",
-    "@bazel/ibazel": "0.12.3",
+    "@bazel/ibazel": "0.12.4",
     "@bazel/typescript": "1.5.0",
     "@types/node": "13.11.1",
     "typescript": "3.8.3"
