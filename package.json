@@ -27,6 +27,7 @@
     "@bazel/ibazel": "0.12.4",
     "@bazel/typescript": "1.6.0",
     "@types/node": "13.11.1",
+    "prettier": "2.0.4",
     "typescript": "3.8.3"
   }
 }
