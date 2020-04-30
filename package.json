@@ -25,7 +25,7 @@
     "@bazel/bazel": "2.1.0",
     "@bazel/buildifier": "3.0.0",
     "@bazel/ibazel": "0.13.0",
-    "@bazel/typescript": "1.6.0",
+    "@bazel/typescript": "1.6.1",
     "@types/node": "13.13.4",
     "typescript": "3.8.3"
   }
