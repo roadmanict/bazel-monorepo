@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/roadmanict/bazel-monorepo#readme",
   "dependencies": {
-    "@bazel/jasmine": "1.6.0",
+    "@bazel/jasmine": "1.6.1",
     "grpc": "1.24.2",
     "typedi": "0.8.0"
   },
   "devDependencies": {
     "@bazel/bazel": "2.1.0",
-    "@bazel/buildifier": "2.2.1",
-    "@bazel/ibazel": "0.12.4",
-    "@bazel/typescript": "1.6.0",
-    "@types/node": "13.11.1",
+    "@bazel/buildifier": "3.0.0",
+    "@bazel/ibazel": "0.13.0",
+    "@bazel/typescript": "1.6.1",
+    "@types/node": "13.13.5",
     "prettier": "2.0.4",
     "typescript": "3.8.3"
   }
