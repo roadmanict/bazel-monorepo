@@ -1,9 +1,9 @@
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'wordpress/**'
+#on:
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'wordpress/**'
 
 jobs:
   wordpress-release:
