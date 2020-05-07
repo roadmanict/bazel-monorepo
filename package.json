@@ -27,7 +27,7 @@
     "@bazel/jasmine": "1.6.1",
     "@bazel/typescript": "1.6.1",
     "@types/node": "13.13.5",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "typescript": "3.8.3"
   }
 }
