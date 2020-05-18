@@ -1,5 +1,5 @@
 # Runtime image
-FROM php:7.4.5-apache
+FROM php:7.4.6-apache
 
 # Log PHP Errors
 RUN echo 'log_errors = On' > /usr/local/etc/php/conf.d/custom.ini \
