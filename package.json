@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/roadmanict/bazel-monorepo#readme",
   "dependencies": {
-    "grpc": "1.24.2",
+    "grpc": "1.24.3",
     "typedi": "0.8.0"
   },
   "devDependencies": {
