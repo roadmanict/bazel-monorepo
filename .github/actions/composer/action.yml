@@ -15,7 +15,7 @@ runs:
     - install
     - --no-progress
     - -d
-    - wordpress
+    - wordpress/base
 branding:
   icon: 'package'
   color: 'purple'
