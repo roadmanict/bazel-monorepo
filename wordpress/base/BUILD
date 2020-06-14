@@ -17,6 +17,6 @@ container_image(
 
 container_test(
     name = "base_wordpress_test",
-    configs = ["//wordpress/test_configs:base_wordpress.yaml"],
+    configs = ["//wordpress/base/test_configs:base_wordpress.yaml"],
     image = ":base_wordpress",
 )
