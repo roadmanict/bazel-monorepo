@@ -32,6 +32,22 @@ load("@npm_bazel_typescript//:index.bzl", "ts_setup_workspace")
 
 ts_setup_workspace()
 
+#pkg_tar setup
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "rules_pkg",
+    sha256 = "aeca78988341a2ee1ba097641056d168320ecc51372ef7ff8e64b139516a4937",
+    urls = [
+        "https://github.com/bazelbuild/rules_pkg/releases/download/0.2.6/rules_pkg-0.2.6.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_pkg/releases/download/0.2.6/rules_pkg-0.2.6.tar.gz",
+    ],
+)
+
+load("@rules_pkg//:deps.bzl", "rules_pkg_dependencies")
+
+rules_pkg_dependencies()
+
 # Docker setup
 http_archive(
     name = "io_bazel_rules_docker",
@@ -59,8 +75,8 @@ load(
 )
 
 container_pull(
-    name = "php",
-    digest = "sha256:8998a45b3325aa96753f3073ecda86abe13dcd7fb004d1edc7382f75e0d66b26",
+    name = "wordpress",
     registry = "index.docker.io",
-    repository = "library/php",
+    repository = "library/wordpress",
+    tag = "5.4.2",
 )
