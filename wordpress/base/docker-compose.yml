@@ -12,7 +12,7 @@ services:
     ports:
       - "9906:3306"
   web:
-    build: .
+    build: ..
     environment:
       DB_NAME: roadman_wp_vogel
       DB_USER: roadman_wp_vogel
