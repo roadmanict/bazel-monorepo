@@ -25,5 +25,5 @@ test: build
 	@npx bazel test //...
 
 run_wordpress:
-	@npx bazel run wordpress:base_wordpress
-	@docker run -p 80:80 bazel/wordpress:base_wordpress
+	@npx bazel run wordpress/base:wordpress_base
+	@docker run -p 80:80 bazel/wordpress/base:wordpress_base
