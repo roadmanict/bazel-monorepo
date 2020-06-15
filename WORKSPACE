@@ -78,5 +78,5 @@ container_pull(
     name = "wordpress",
     registry = "index.docker.io",
     repository = "library/wordpress",
-    tag = "5.4.2",
+    tag = "5.4",
 )

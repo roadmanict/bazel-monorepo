@@ -1,0 +1,1 @@
+// File to stop Wordpress docker image from installing Wordpress

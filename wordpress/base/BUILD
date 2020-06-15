@@ -6,9 +6,8 @@ pkg_tar(
     name = "wordpress_base_src",
     srcs = [
         ".htaccess",
-        "composer.json",
-        "composer.lock",
         "config",
+        "index.php",
         "vendor",
         "web",
     ],
