@@ -26,4 +26,13 @@ test: build
 
 run_wordpress:
 	@npx bazel run wordpress/base:wordpress_base
-	@docker run -p 80:80 bazel/wordpress/base:wordpress_base
+	@docker run -p 80:80 \
+		--network bazel-monorepo_wordpress \
+		-e DB_NAME=roadman_wp_vogel \
+		-e DB_USER=roadman_wp_vogel \
+		-e DB_PASSWORD=devpass \
+		-e DB_HOST=mysql_db:3306 \
+		-e WP_ENV=development \
+		-e WP_HOME=http://localhost \
+		-e WP_SITEURL=${WP_HOME}/wp \
+		bazel/wordpress/base:wordpress_base

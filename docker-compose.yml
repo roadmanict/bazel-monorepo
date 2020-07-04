@@ -4,10 +4,14 @@ version: '3'
 services:
   db:
     image: mysql:5.7
+    container_name: mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: my_secret_pw_shh
       MYSQL_DATABASE: roadman_wp_vogel
       MYSQL_USER: roadman_wp_vogel
       MYSQL_PASSWORD: devpass
-    ports:
-      - "9906:3306"
+    networks:
+      - wordpress
+networks:
+  wordpress:
+    driver: bridge
