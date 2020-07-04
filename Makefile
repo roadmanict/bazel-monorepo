@@ -10,7 +10,7 @@ clean:
 
 install:
 	@npm install
-	@composer install -d wordpress/base
+	@composer update -d wordpress/base
 
 lint:
 	@npx buildifier -r ./
