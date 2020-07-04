@@ -9,6 +9,7 @@ pkg_tar(
         "composer.json",
         "composer.lock",
         "config",
+        "index.php",
         "vendor",
         "web",
     ],
