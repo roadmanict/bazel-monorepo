@@ -12,4 +12,4 @@ web/app/themes/almasi/
 web/wp
 
 # Composer
-/vendor
+/vendor_plugins
