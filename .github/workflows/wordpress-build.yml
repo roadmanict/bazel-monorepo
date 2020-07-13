@@ -1,14 +1,14 @@
-on:
-  push:
-    branches-ignore:
-      master
-    paths:
-      - 'wordpress/**'
-      - '.bazelignore'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'BUILD'
-      - 'WORKSPACE'
+#on:
+#  push:
+#    branches-ignore:
+#      master
+#    paths:
+#      - 'wordpress/**'
+#      - '.bazelignore'
+#      - 'package.json'
+#      - 'package-lock.json'
+#      - 'BUILD'
+#      - 'WORKSPACE'
 
 jobs:
   wordpress-build:
