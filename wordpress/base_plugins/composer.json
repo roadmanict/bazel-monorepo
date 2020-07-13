@@ -1,6 +1,9 @@
 {
     "name": "roadmanict/base_plugins",
     "type": "project",
+    "config": {
+        "vendor-dir": "vendor_plugins"
+    },
     "repositories": [
         {
             "type": "composer",

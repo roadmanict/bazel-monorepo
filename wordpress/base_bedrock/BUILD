@@ -2,6 +2,10 @@ load("@rules_pkg//:pkg.bzl", "pkg_tar")
 load("@io_bazel_rules_docker//container:container.bzl", "container_image")
 load("@io_bazel_rules_docker//contrib:test.bzl", "container_test")
 
+package(
+    default_visibility = ["//wordpress:__subpackages__"],
+)
+
 pkg_tar(
     name = "wordpress_base_bedrock_src",
     srcs = [

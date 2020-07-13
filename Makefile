@@ -27,7 +27,7 @@ test: build
 	@npx bazel test //...
 
 run_wordpress:
-	@npx bazel run wordpress/base_bedrock:wordpress_base_bedrock
+	@npx bazel run wordpress/base_plugins:wordpress_base_plugins
 	@docker run -p 80:80 \
 		--network bazel-monorepo_wordpress \
 		-e DB_NAME=roadman_wp_vogel \
@@ -37,4 +37,4 @@ run_wordpress:
 		-e WP_ENV=development \
 		-e WP_HOME=http://localhost \
 		-e WP_SITEURL=http://localhost/wp \
-		bazel/wordpress/base_bedrock:wordpress_base_bedrock
+		bazel/wordpress/base_plugins:wordpress_base_plugins
