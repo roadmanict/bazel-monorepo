@@ -22,14 +22,6 @@ updates:
 
 
   - package-ecosystem: "composer"
-    directory: "/wordpress/base"
-    # Check for updates once a week
+    directory: "/wordpress/base_plugins"
     schedule:
       interval: "daily"
-
-  - package-ecosystem: "docker"
-    # Look for a `Dockerfile` in the `root` directory
-    directory: "/wordpress/base"
-    # Check for updates once a week
-    schedule:
-      interval: "weekly"

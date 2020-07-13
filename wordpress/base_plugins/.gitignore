@@ -1,0 +1,15 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+web/app/languages
+!web/app/uploads/.gitkeep
+web/app/themes/almasi/
+
+# WordPress
+web/wp
+
+# Composer
+/vendor
