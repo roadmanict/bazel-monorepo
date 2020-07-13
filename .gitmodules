@@ -1,0 +1,3 @@
+[submodule "wordpress/base_bedrock/repo"]
+	path = wordpress/base_bedrock/repo
+	url = git@github.com:roots/bedrock.git
