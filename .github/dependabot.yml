@@ -1,13 +1,25 @@
 version: 2
 
 updates:
-  # Enable version updates for npm
-  - package-ecosystem: "npm"
-    # Look for `package.json` and `lock` files in the `root` directory
+  - package-ecosystem: "github-actions"
     directory: "/"
-    # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "@types/node"
+        # Ignore only new versions for 4.x and 5.x
+        versions: ["13.x", "14.x"]
+
 
   - package-ecosystem: "composer"
     directory: "/wordpress/base"

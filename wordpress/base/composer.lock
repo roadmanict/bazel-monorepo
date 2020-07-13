@@ -4,92 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79e95f56f828272767eee09c1f11516e",
+    "content-hash": "5fb6fba2066e04ebb58a24e011191295",
     "packages": [
-        {
-            "name": "aws/aws-sdk-php",
-            "version": "3.133.26",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0bccb2841d035fe983a811b964d3b485171c0406"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0bccb2841d035fe983a811b964d3b485171c0406",
-                "reference": "0bccb2841d035fe983a811b964d3b485171c0406",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-pcre": "*",
-                "ext-simplexml": "*",
-                "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4.1",
-                "mtdowling/jmespath.php": "^2.5",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "andrewsville/php-token-reflection": "^1.4",
-                "aws/aws-php-sns-message-validator": "~1.0",
-                "behat/behat": "~3.0",
-                "doctrine/cache": "~1.4",
-                "ext-dom": "*",
-                "ext-openssl": "*",
-                "ext-pcntl": "*",
-                "ext-sockets": "*",
-                "nette/neon": "^2.3",
-                "phpunit/phpunit": "^4.8.35|^5.4.3",
-                "psr/cache": "^1.0",
-                "psr/simple-cache": "^1.0",
-                "sebastian/comparator": "^1.2.3"
-            },
-            "suggest": {
-                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
-                "doctrine/cache": "To use the DoctrineCacheAdapter",
-                "ext-curl": "To send requests using cURL",
-                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
-                "ext-sockets": "To use client-side monitoring"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Aws\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Amazon Web Services",
-                    "homepage": "http://aws.amazon.com"
-                }
-            ],
-            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
-            "homepage": "http://aws.amazon.com/sdkforphp",
-            "keywords": [
-                "amazon",
-                "aws",
-                "cloud",
-                "dynamodb",
-                "ec2",
-                "glacier",
-                "s3",
-                "sdk"
-            ],
-            "time": "2020-02-29T00:41:14+00:00"
-        },
         {
             "name": "composer/installers",
             "version": "v1.9.0",
@@ -215,607 +131,38 @@
                 "zend",
                 "zikula"
             ],
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/43ece0e75098b7ecd8d13918293029e555a50f82",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.1"
-            },
-            "suggest": {
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
-                "psr/log": "Required for using the Log middleware"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2019-12-23T11:57:10+00:00"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-12-20T10:07:11+00:00"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
-            },
-            "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "homepage": "https://github.com/Tobion"
-                }
-            ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "psr-7",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "time": "2019-07-01T23:21:34+00:00"
-        },
-        {
-            "name": "humanmade/s3-uploads",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/humanmade/S3-Uploads.git",
-                "reference": "bc1df42517c1ccbfbfc61fe4802008d22948a9b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/bc1df42517c1ccbfbfc61fe4802008d22948a9b8",
-                "reference": "bc1df42517c1ccbfbfc61fe4802008d22948a9b8",
-                "shasum": ""
-            },
-            "require": {
-                "aws/aws-sdk-php": "~3.18",
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Human Made Limited",
-                    "email": "support@humanmade.co.uk",
-                    "homepage": "http://hmn.md/"
-                }
-            ],
-            "description": "WordPress plugin to store uploads on S3",
-            "homepage": "https://github.com/humanmade/S3-Uploads",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2019-11-18T16:44:45+00:00"
-        },
-        {
-            "name": "koodimonni-language/nl_nl",
-            "version": "5.4.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.4.2/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni-plugin-language/akismet-nl_nl": "*",
-                "koodimonni-plugin-language/bbpress-nl_nl": "*",
-                "koodimonni-plugin-language/woocommerce-nl_nl": "*",
-                "koodimonni-plugin-language/wordpress-importer-nl_nl": "*",
-                "koodimonni-theme-language/twentyeleven-nl_nl": "*",
-                "koodimonni-theme-language/twentyfifteen-nl_nl": "*",
-                "koodimonni-theme-language/twentyfourteen-nl_nl": "*",
-                "koodimonni-theme-language/twentysixteen-nl_nl": "*",
-                "koodimonni-theme-language/twentyten-nl_nl": "*",
-                "koodimonni-theme-language/twentythirteen-nl_nl": "*",
-                "koodimonni-theme-language/twentytwelve-nl_nl": "*",
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Full Wordpress translation (including themes and core plugins) for Dutch - nl_nl",
-            "keywords": [
-                "Full-Package",
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentysixteen"
-            ]
-        },
-        {
-            "name": "koodimonni-plugin-language/akismet-nl_nl",
-            "version": "4.1.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/4.1.6/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress akismet translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "akismet",
-                "nl_nl"
-            ]
-        },
-        {
-            "name": "koodimonni-plugin-language/bbpress-nl_nl",
-            "version": "2.6.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/bbpress/2.6.5/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress bbpress translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "bbpress",
-                "nl_nl"
-            ]
-        },
-        {
-            "name": "koodimonni-plugin-language/woocommerce-nl_nl",
-            "version": "4.2.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/4.2.0/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress woocommerce translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "woocommerce"
-            ]
-        },
-        {
-            "name": "koodimonni-plugin-language/wordpress-importer-nl_nl",
-            "version": "0.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/wordpress-importer/0.7/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress wordpress-importer translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "wordpress-importer"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentyeleven-nl_nl",
-            "version": "3.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyeleven/3.4/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentyeleven translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentyeleven"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentyfifteen-nl_nl",
-            "version": "2.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfifteen/2.6/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentyfifteen translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentyfifteen"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentyfourteen-nl_nl",
-            "version": "2.8",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfourteen/2.8/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentyfourteen translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentyfourteen"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentysixteen-nl_nl",
-            "version": "2.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.1/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentysixteen translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentysixteen"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentyten-nl_nl",
-            "version": "3.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyten/3.0/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentyten translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentyten"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentythirteen-nl_nl",
-            "version": "3.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.0/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentythirteen translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentythirteen"
-            ]
-        },
-        {
-            "name": "koodimonni-theme-language/twentytwelve-nl_nl",
-            "version": "3.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentytwelve/3.1/nl_NL.zip"
-            },
-            "require": {
-                "koodimonni/composer-dropin-installer": ">=0.2.3"
-            },
-            "type": "wordpress-language",
-            "description": "Wordpress twentytwelve translation for Dutch - nl_nl",
-            "keywords": [
-                "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentytwelve"
-            ]
-        },
-        {
-            "name": "koodimonni/composer-dropin-installer",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
-                "reference": "a749f19e3a3bc05529190961ed7529592b20138e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/a749f19e3a3bc05529190961ed7529592b20138e",
-                "reference": "a749f19e3a3bc05529190961ed7529592b20138e",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*-dev"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Koodimonni\\Composer\\Dropin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Koodimonni\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "WTFPL"
-            ],
-            "authors": [
-                {
-                    "name": "Onni Hakala",
-                    "email": "onni@koodimonni.fi",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
-            "time": "2018-02-04T10:52:01+00:00"
-        },
-        {
-            "name": "mtdowling/jmespath.php",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jmespath/jmespath.php.git",
-                "reference": "52168cb9472de06979613d365c7f1ab8798be895"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/52168cb9472de06979613d365c7f1ab8798be895",
-                "reference": "52168cb9472de06979613d365c7f1ab8798be895",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "symfony/polyfill-mbstring": "^1.4"
-            },
-            "require-dev": {
-                "composer/xdebug-handler": "^1.2",
-                "phpunit/phpunit": "^4.8.36|^7.5.15"
-            },
-            "bin": [
-                "bin/jp.php"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JmesPath\\": "src/"
-                },
-                "files": [
-                    "src/JmesPath.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Declaratively specify how to extract elements from a JSON document",
-            "keywords": [
-                "json",
-                "jsonpath"
-            ],
-            "time": "2019-12-30T18:03:34+00:00"
-        },
-        {
             "name": "oscarotero/env",
-            "version": "v1.2.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6"
+                "reference": "0da22cadc6924155fa9bbea2cdda2e84ab7cbdd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
-                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0da22cadc6924155fa9bbea2cdda2e84ab7cbdd3",
+                "reference": "0da22cadc6924155fa9bbea2cdda2e84ab7cbdd3",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
-                "php": ">=5.2"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Env": "src/"
-                }
+                "psr-4": {
+                    "Env\\": "src/"
+                },
+                "files": [
+                    "src/env_function.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -834,7 +181,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2019-04-03T18:28:43+00:00"
+            "time": "2020-06-11T10:59:27+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -889,44 +236,29 @@
                 "php",
                 "type"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-06-07T10:40:07+00:00"
         },
         {
-            "name": "psr/http-message",
-            "version": "1.0.1",
+            "name": "roots/bedrock-autoloader",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "url": "https://github.com/roots/bedrock-autoloader.git",
+                "reference": "885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/roots/bedrock-autoloader/zipball/885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70",
+                "reference": "885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
+                    "Roots\\Bedrock\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -935,61 +267,41 @@
             ],
             "authors": [
                 {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "name": "Nick Fox",
+                    "email": "nick@foxaii.com",
+                    "homepage": "https://github.com/foxaii"
+                },
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Austin Pray",
+                    "email": "austin@austinpray.com",
+                    "homepage": "https://github.com/austinpray"
                 }
             ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
+            "description": "An autoloader that enables standard plugins to be required just like must-use plugins",
             "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
+                "autoloader",
+                "bedrock",
+                "mu-plugin",
+                "must-use",
+                "plugin",
+                "wordpress"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
-        },
-        {
-            "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/getallheaders.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
+            "funding": [
                 {
-                    "name": "Ralph Khattar",
-                    "email": "ralph.khattar@gmail.com"
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
                 }
             ],
-            "description": "A polyfill for getallheaders.",
-            "time": "2019-03-08T08:55:37+00:00"
+            "time": "2020-05-18T04:43:20+00:00"
         },
         {
             "name": "roots/wordpress",
@@ -1001,7 +313,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.2"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.2",
+                "reference": "5.4.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -1024,16 +337,6 @@
                 "blog",
                 "cms",
                 "wordpress"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/roots",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/rootsdev",
-                    "type": "patreon"
-                }
             ],
             "time": "2020-06-10T21:43:59+00:00"
         },
@@ -1194,16 +497,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9"
+                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
-                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
+                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
                 "shasum": ""
             },
             "require": {
@@ -1216,6 +519,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.17-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -1262,66 +569,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-12T16:14:59+00:00"
-        },
-        {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/34094cfa9abe1f0f14f48f490772db7a775559f2",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.14-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "time": "2020-06-06T08:46:27+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1385,89 +633,7 @@
                 "env",
                 "environment"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-06-07T18:25:35+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/contact-form-7/"
-        },
-        {
-            "name": "wpackagist-plugin/goolytics-simple-google-analytics",
-            "version": "1.1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/goolytics-simple-google-analytics/",
-                "reference": "tags/1.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/goolytics-simple-google-analytics.1.1.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/goolytics-simple-google-analytics/"
-        },
-        {
-            "name": "wpackagist-plugin/slideshow-jquery-image-gallery",
-            "version": "2.3.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/slideshow-jquery-image-gallery/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.zip?timestamp=1448124105"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/slideshow-jquery-image-gallery/"
-        },
-        {
-            "name": "wpackagist-theme/almasi",
-            "version": "1.0.4",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/almasi/",
-                "reference": "1.0.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/almasi.1.0.4.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/almasi/"
         }
     ],
     "packages-dev": [
@@ -1477,12 +643,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60"
+                "reference": "881b9e4a8de3186c93904230bdf6344b685fe6a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
-                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/881b9e4a8de3186c93904230bdf6344b685fe6a5",
+                "reference": "881b9e4a8de3186c93904230bdf6344b685fe6a5",
                 "shasum": ""
             },
             "conflict": {
@@ -1551,6 +717,7 @@
                 "friendsofsymfony/user-bundle": ">=1.2,<1.3.5",
                 "fuel/core": "<1.8.1",
                 "getgrav/grav": "<1.7-beta.8",
+                "gos/web-socket-bundle": "<1.10.4|>=2,<2.6.1|>=3,<3.3",
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
                 "guzzlehttp/guzzle": ">=4-rc.2,<4.2.4|>=5,<5.3.1|>=6,<6.2.1",
@@ -1755,7 +922,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-03T16:50:03+00:00"
+            "time": "2020-07-11T19:04:25+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1810,11 +977,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "roave/security-advisories": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1"
