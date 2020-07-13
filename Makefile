@@ -9,8 +9,9 @@ clean:
 	@rm -rf node_modules
 
 install:
-	@npm install
+	@npm ci
 	@composer install -d wordpress/base
+	@composer install -d wordpress/base_bedrock/repo
 
 lint:
 	@npx buildifier -r ./
@@ -25,7 +26,7 @@ test: build
 	@npx bazel test //...
 
 run_wordpress:
-	@npx bazel run wordpress/base:wordpress_base
+	@npx bazel run wordpress/base_bedrock:wordpress_base_bedrock
 	@docker run -p 80:80 \
 		--network bazel-monorepo_wordpress \
 		-e DB_NAME=roadman_wp_vogel \
@@ -34,5 +35,5 @@ run_wordpress:
 		-e DB_HOST=mysql_db:3306 \
 		-e WP_ENV=development \
 		-e WP_HOME=http://localhost \
-		-e WP_SITEURL=${WP_HOME}/wp \
-		bazel/wordpress/base:wordpress_base
+		-e WP_SITEURL=http://localhost/wp \
+		bazel/wordpress/base_bedrock:wordpress_base_bedrock
