@@ -5,7 +5,7 @@ default: build
 all: clean install build
 
 clean:
-	@npx bazel clean
+	@npx bazelisk clean
 	@rm -rf node_modules
 
 install:
@@ -17,16 +17,16 @@ lint:
 	@npx buildifier -r ./
 
 build: lint
-	@npx bazel build //...
+	@npx bazelisk build //...
 
 watch: lint
 	@npx ibazel build //...
 
 test: build
-	@npx bazel test //...
+	@npx bazelisk test //...
 
 run_wordpress:
-	@npx bazel run wordpress/base_plugins:wordpress_base_plugins
+	@npx bazelisk run wordpress/base_plugins:wordpress_base_plugins
 	@docker run -p 80:80 \
 		--network bazel-monorepo_wordpress \
 		-e DB_NAME=roadman_wp_vogel \
