@@ -5,7 +5,7 @@ default: build
 all: clean install build
 
 clean:
-	@npx bazelisk clean
+	@npx @bazel/bazelisk clean
 	@rm -rf node_modules
 
 install:
@@ -14,16 +14,16 @@ install:
 	@composer install -d wordpress/base_plugins
 
 lint:
-	@npx buildifier -r ./
+	@npx @bazel/buildifier -r ./
 
 build: lint
-	@npx bazelisk build //...
+	@npx @bazel/bazelisk build //...
 
 watch: lint
-	@npx ibazel build //...
+	@npx @bazel/ibazel build //...
 
 test: build
-	@npx bazelisk test //...
+	@npx @bazel/bazelisk test //...
 
 run_wordpress:
 	@npx bazelisk run wordpress/base_plugins:wordpress_base_plugins
