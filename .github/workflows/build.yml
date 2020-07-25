@@ -9,21 +9,19 @@ jobs:
         with:
           submodules: true
 
-      - name: Mount bazel cache
-        uses: actions/cache@v2
-        with:
-          path: "/home/runner/.cache/bazel"
-          key: bazel
-
       - name: Mount npm cache
         uses: actions/cache@v2
         with:
           path: "/home/runner/.npm"
           key: npm
 
+      - name: Install npm dependencies
+        run: |
+          npm ci
+
       - name: Get Composer Cache Directory
         id: composer-cache
-        working-directory: ./wordpress/base_bedrock
+        working-directory: ./wordpress/base_bedrock/repo
         run: |
           echo "::set-output name=dir::$(composer config cache-files-dir)"
 
@@ -35,10 +33,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-composer-
 
-      - name: Install npm dependencies
-        run: |
-          npm ci
-
       - name: Install Wordpress bedrock dependencies
         uses: ./.github/actions/composer
         with:
@@ -48,6 +42,12 @@ jobs:
         uses: ./.github/actions/composer
         with:
           directory: wordpress/base_plugins
+
+      - name: Mount bazel cache
+        uses: actions/cache@v2
+        with:
+          path: "/home/runner/.cache/bazel"
+          key: bazel
 
       - name: Build
         run: |
