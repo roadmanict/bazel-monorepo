@@ -10,7 +10,6 @@ clean:
 
 install:
 	@npm ci
-	@composer install -d wordpress/base
 	@composer install -d wordpress/base_bedrock/repo
 	@composer install -d wordpress/base_plugins
 
