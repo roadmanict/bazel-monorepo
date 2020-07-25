@@ -1,12 +1,5 @@
 on:
-  push:
-    paths:
-      - 'nodejs/**'
-      - '.bazelignore'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'BUILD'
-      - 'WORKSPACE'
+  push: {}
 
 jobs:
   nodejs-build:
