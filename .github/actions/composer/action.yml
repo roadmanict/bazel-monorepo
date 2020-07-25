@@ -1,10 +1,9 @@
 name: 'Composer (php-actions)'
 description: 'Use the Composer CLI in your Github Actions.'
 inputs:
-  command:
-    description: 'Composer command to run'
+  directory:
+    description: 'Directory to install'
     required: true
-    default: install
 outputs:
   time:
     description: 'The time the action was run'
@@ -13,9 +12,8 @@ runs:
   image: 'composer:latest'
   args:
     - install
-    - --no-progress
     - -d
-    - wordpress/base
+    - ${{ inputs.directory }}
 branding:
   icon: 'package'
   color: 'purple'

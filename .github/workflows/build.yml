@@ -19,28 +19,33 @@ jobs:
           path: "/home/runner/.npm"
           key: npm
 
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache Composer Downloads
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
       - name: Install npm dependencies
         run: |
           npm ci
 
-      - name: Cache PHP dependencies
-        uses: actions/cache@v2
+      - name: Install Wordpress bedrock dependencies
+        uses: ./.github/actions/composer
         with:
-          path: wordpress/base_bedrock/vendor
-          key: ${{ runner.OS }}-wordpress-build-${{ hashFiles('wordpress/**/composer.lock') }}
+          directory: wordpress/base_bedrock/repo
 
-      - name: Install bedrock Composer packages dependencies
-        uses: php-actions/composer@v1
+      - name: Install Wordpress plugins dependencies
+        uses: ./.github/actions/composer
         with:
-          command: composer
-          args: install -d wordpress/base_bedrock/repo
-
-      - name: Install wordpress plugins Composer packages dependencies
-        uses: php-actions/composer@v1
-        with:
-          command: composer
-          args: install -d wordpress/base_plugins
+          directory: wordpress/base_plugins
 
       - name: Build
         run: |
-          npx bazel build //nodejs/...
+          npx bazel build //...
