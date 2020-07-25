@@ -43,9 +43,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: "/home/runner/.cache/bazel"
-          key: ${{ runner.os }}-bazel-${{ hashFiles('WORKSPACE') }}-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/composer.lock') }}
+          key: ${{ runner.os }}-bazel-${{ hashFiles('.bazelversion') }}-${{ hashFiles('WORKSPACE') }}-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
-            ${{ runner.os }}-bazel-
+            ${{ runner.os }}-bazel--${{ hashFiles('.bazelversion') }}
 
 
       - name: Build
