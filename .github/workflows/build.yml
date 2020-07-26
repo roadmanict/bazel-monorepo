@@ -47,7 +47,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-bazel--${{ hashFiles('.bazelversion') }}
 
-
       - name: Build
         run: |
           npx bazel build //...
