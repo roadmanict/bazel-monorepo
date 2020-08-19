@@ -21,7 +21,7 @@
     "typedi": "0.8.0"
   },
   "devDependencies": {
-    "@bazel/bazelisk": "1.6.0",
+    "@bazel/bazelisk": "1.6.1",
     "@bazel/buildifier": "3.4.0",
     "@bazel/ibazel": "0.13.1",
     "@bazel/jasmine": "1.7.0",
