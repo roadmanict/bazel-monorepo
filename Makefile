@@ -10,6 +10,7 @@ clean:
 
 install:
 	@npm ci
+	@git submodule update
 	@composer install -d wordpress/base_bedrock/repo
 	@composer install -d wordpress/base_plugins
 
@@ -23,7 +24,7 @@ watch: lint
 	@npx @bazel/ibazel build //...
 
 test: build
-	@npx @bazel/bazelisk test //...
+	@npx @bazel/ibazel test --test_output=streamed //...
 
 run_wordpress:
 	@npx bazelisk run wordpress/base_plugins:wordpress_base_plugins
