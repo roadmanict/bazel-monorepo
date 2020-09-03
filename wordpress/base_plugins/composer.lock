@@ -470,10 +470,10 @@
         },
         {
             "name": "koodimonni-language/nl_nl",
-            "version": "5.5",
+            "version": "5.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.5/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.5.1/nl_NL.zip"
             },
             "require": {
                 "koodimonni-plugin-language/akismet-nl_nl": "*",
@@ -539,10 +539,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-nl_nl",
-            "version": "4.3.2",
+            "version": "4.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/4.3.2/nl_NL.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/4.4.1/nl_NL.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
