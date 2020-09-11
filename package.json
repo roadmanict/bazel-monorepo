@@ -26,7 +26,7 @@
     "@bazel/ibazel": "0.13.1",
     "@bazel/jasmine": "1.7.0",
     "@bazel/typescript": "2.2.0",
-    "@types/node": "12.12.56",
+    "@types/node": "12.12.57",
     "@typescript-eslint/eslint-plugin": "4.0.0",
     "@typescript-eslint/parser": "3.10.1",
     "eslint": "7.8.1",
