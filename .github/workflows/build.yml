@@ -10,7 +10,7 @@ jobs:
           submodules: true
 
       - name: Mount npm cache
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.5
         with:
           path: "/home/runner/.npm"
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -22,7 +22,7 @@ jobs:
           npm ci
 
       - name: Cache Composer Downloads
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.5
         with:
           path: "/home/runner/.cache/composer/files"
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
@@ -40,7 +40,7 @@ jobs:
           directory: wordpress/base_plugins
 
       - name: Mount bazel cache
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.5
         with:
           path: "/home/runner/.cache/bazel"
           key: ${{ runner.os }}-bazel-${{ hashFiles('.bazelversion') }}-${{ hashFiles('WORKSPACE') }}-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/composer.lock') }}
