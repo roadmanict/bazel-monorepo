@@ -93,16 +93,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.9.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
                 "shasum": ""
             },
             "require": {
@@ -113,17 +113,18 @@
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.6.* || 2.0.*@dev",
-                "composer/semver": "1.0.* || 2.0.*@dev",
-                "phpunit/phpunit": "^4.8.36",
-                "sebastian/comparator": "^1.2.4",
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -161,6 +162,7 @@
                 "Porto",
                 "RadPHP",
                 "SMF",
+                "Starbug",
                 "Thelia",
                 "Whmcs",
                 "WolfCMS",
@@ -194,13 +196,16 @@
                 "majima",
                 "mako",
                 "mediawiki",
+                "miaoxing",
                 "modulework",
                 "modx",
                 "moodle",
                 "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "processwire",
                 "puppet",
                 "pxcms",
                 "reindex",
@@ -210,6 +215,7 @@
                 "sydes",
                 "sylius",
                 "symfony",
+                "tastyigniter",
                 "typo3",
                 "wordpress",
                 "yawik",
@@ -222,11 +228,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-07T06:57:05+00:00"
+            "time": "2021-09-13T08:19:44+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -478,25 +488,40 @@
             "require": {
                 "koodimonni-plugin-language/akismet-nl_nl": "*",
                 "koodimonni-plugin-language/bbpress-nl_nl": "*",
+                "koodimonni-plugin-language/blogger-importer-nl_nl": "*",
+                "koodimonni-plugin-language/buddypress-nl_nl": "*",
+                "koodimonni-plugin-language/classic-editor-nl_nl": "*",
+                "koodimonni-plugin-language/classic-widgets-nl_nl": "*",
+                "koodimonni-plugin-language/debug-bar-nl_nl": "*",
+                "koodimonni-plugin-language/enable-jquery-migrate-helper-nl_nl": "*",
+                "koodimonni-plugin-language/health-check-nl_nl": "*",
+                "koodimonni-plugin-language/hello-dolly-nl_nl": "*",
                 "koodimonni-plugin-language/woocommerce-nl_nl": "*",
                 "koodimonni-plugin-language/wordpress-importer-nl_nl": "*",
+                "koodimonni-plugin-language/wp-autoupdates-nl_nl": "*",
+                "koodimonni-plugin-language/wp-jquery-update-test-nl_nl": "*",
+                "koodimonni-plugin-language/wpcat2tag-importer-nl_nl": "*",
                 "koodimonni-theme-language/twentyeleven-nl_nl": "*",
                 "koodimonni-theme-language/twentyfifteen-nl_nl": "*",
                 "koodimonni-theme-language/twentyfourteen-nl_nl": "*",
+                "koodimonni-theme-language/twentynineteen-nl_nl": "*",
+                "koodimonni-theme-language/twentyseventeen-nl_nl": "*",
                 "koodimonni-theme-language/twentysixteen-nl_nl": "*",
                 "koodimonni-theme-language/twentyten-nl_nl": "*",
                 "koodimonni-theme-language/twentythirteen-nl_nl": "*",
                 "koodimonni-theme-language/twentytwelve-nl_nl": "*",
+                "koodimonni-theme-language/twentytwenty-nl_nl": "*",
+                "koodimonni-theme-language/twentytwentyone-nl_nl": "*",
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Full Wordpress translation (including themes and core plugins) for Dutch - nl_nl",
+            "description": "Full WordPress translation (including themes and core plugins) for Dutch - nl_nl",
             "keywords": [
+                "Dutch",
                 "Full-Package",
                 "Translation",
-                "Wordpress",
-                "nl_nl",
-                "twentysixteen"
+                "WordPress",
+                "nl_nl"
             ]
         },
         {
@@ -510,10 +535,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress akismet translation for Dutch - nl_nl",
+            "description": "WordPress akismet translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "akismet",
                 "nl_nl"
             ]
@@ -529,11 +554,163 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress bbpress translation for Dutch - nl_nl",
+            "description": "WordPress bbpress translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "bbpress",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/blogger-importer-nl_nl",
+            "version": "0.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/blogger-importer/0.9/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress blogger-importer translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "blogger-importer",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/buddypress-nl_nl",
+            "version": "9.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/buddypress/9.1.1/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress buddypress translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "buddypress",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/classic-editor-nl_nl",
+            "version": "1.6.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/classic-editor/1.6.2/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress classic-editor translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "classic-editor",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/classic-widgets-nl_nl",
+            "version": "0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/classic-widgets/0.2/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress classic-widgets translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "classic-widgets",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/debug-bar-nl_nl",
+            "version": "1.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/debug-bar/1.1.2/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress debug-bar translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "debug-bar",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/enable-jquery-migrate-helper-nl_nl",
+            "version": "1.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/enable-jquery-migrate-helper/1.3.0/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress enable-jquery-migrate-helper translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "enable-jquery-migrate-helper",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/health-check-nl_nl",
+            "version": "1.4.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/health-check/1.4.5/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress health-check translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "health-check",
+                "nl_nl"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/hello-dolly-nl_nl",
+            "version": "1.7.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/hello-dolly/1.7.2/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress hello-dolly translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "hello-dolly",
                 "nl_nl"
             ]
         },
@@ -548,10 +725,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress woocommerce translation for Dutch - nl_nl",
+            "description": "WordPress woocommerce translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "woocommerce"
             ]
@@ -567,12 +744,69 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress wordpress-importer translation for Dutch - nl_nl",
+            "description": "WordPress wordpress-importer translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "wordpress-importer"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/wp-autoupdates-nl_nl",
+            "version": "0.8.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/wp-autoupdates/0.8.1/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress wp-autoupdates translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "wp-autoupdates"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/wp-jquery-update-test-nl_nl",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/wp-jquery-update-test/2.0.0/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress wp-jquery-update-test translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "wp-jquery-update-test"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/wpcat2tag-importer-nl_nl",
+            "version": "0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/wpcat2tag-importer/0.5/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress wpcat2tag-importer translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "wpcat2tag-importer"
             ]
         },
         {
@@ -586,10 +820,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyeleven translation for Dutch - nl_nl",
+            "description": "WordPress twentyeleven translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyeleven"
             ]
@@ -605,10 +839,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyfifteen translation for Dutch - nl_nl",
+            "description": "WordPress twentyfifteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyfifteen"
             ]
@@ -624,12 +858,50 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyfourteen translation for Dutch - nl_nl",
+            "description": "WordPress twentyfourteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyfourteen"
+            ]
+        },
+        {
+            "name": "koodimonni-theme-language/twentynineteen-nl_nl",
+            "version": "2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/theme/twentynineteen/2.1/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress twentynineteen translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "twentynineteen"
+            ]
+        },
+        {
+            "name": "koodimonni-theme-language/twentyseventeen-nl_nl",
+            "version": "2.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/theme/twentyseventeen/2.8/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress twentyseventeen translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "twentyseventeen"
             ]
         },
         {
@@ -643,10 +915,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentysixteen translation for Dutch - nl_nl",
+            "description": "WordPress twentysixteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentysixteen"
             ]
@@ -662,10 +934,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyten translation for Dutch - nl_nl",
+            "description": "WordPress twentyten translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyten"
             ]
@@ -681,10 +953,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentythirteen translation for Dutch - nl_nl",
+            "description": "WordPress twentythirteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentythirteen"
             ]
@@ -700,12 +972,50 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentytwelve translation for Dutch - nl_nl",
+            "description": "WordPress twentytwelve translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentytwelve"
+            ]
+        },
+        {
+            "name": "koodimonni-theme-language/twentytwenty-nl_nl",
+            "version": "1.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/theme/twentytwenty/1.8/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress twentytwenty translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "twentytwenty"
+            ]
+        },
+        {
+            "name": "koodimonni-theme-language/twentytwentyone-nl_nl",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/theme/twentytwentyone/1.0/nl_NL.zip"
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "WordPress twentytwentyone translations for Dutch - nl_nl",
+            "keywords": [
+                "Translation",
+                "WordPress",
+                "nl_nl",
+                "twentytwentyone"
             ]
         },
         {
@@ -1026,18 +1336,18 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.3",
+            "version": "5.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.3"
+                "reference": "tags/5.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.5.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
@@ -1055,7 +1365,7 @@
                 "url": "https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.zip?timestamp=1448124105"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/slideshow-jquery-image-gallery/"
@@ -1073,7 +1383,7 @@
                 "url": "https://downloads.wordpress.org/theme/almasi.1.0.4.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/almasi/"
