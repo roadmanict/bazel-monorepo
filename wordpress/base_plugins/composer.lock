@@ -60,12 +60,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Aws\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Aws\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -93,16 +93,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.9.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
                 "shasum": ""
             },
             "require": {
@@ -113,17 +113,18 @@
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.6.* || 2.0.*@dev",
-                "composer/semver": "1.0.* || 2.0.*@dev",
-                "phpunit/phpunit": "^4.8.36",
-                "sebastian/comparator": "^1.2.4",
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -161,6 +162,7 @@
                 "Porto",
                 "RadPHP",
                 "SMF",
+                "Starbug",
                 "Thelia",
                 "Whmcs",
                 "WolfCMS",
@@ -194,13 +196,16 @@
                 "majima",
                 "mako",
                 "mediawiki",
+                "miaoxing",
                 "modulework",
                 "modx",
                 "moodle",
                 "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "processwire",
                 "puppet",
                 "pxcms",
                 "reindex",
@@ -210,6 +215,7 @@
                 "sydes",
                 "sylius",
                 "symfony",
+                "tastyigniter",
                 "typo3",
                 "wordpress",
                 "yawik",
@@ -222,11 +228,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-07T06:57:05+00:00"
+            "time": "2021-09-13T08:19:44+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -271,12 +281,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -336,12 +346,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -396,12 +406,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -510,10 +520,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress akismet translation for Dutch - nl_nl",
+            "description": "WordPress akismet translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "akismet",
                 "nl_nl"
             ]
@@ -529,10 +539,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress bbpress translation for Dutch - nl_nl",
+            "description": "WordPress bbpress translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "bbpress",
                 "nl_nl"
             ]
@@ -567,10 +577,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress wordpress-importer translation for Dutch - nl_nl",
+            "description": "WordPress wordpress-importer translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "wordpress-importer"
             ]
@@ -586,10 +596,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyeleven translation for Dutch - nl_nl",
+            "description": "WordPress twentyeleven translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyeleven"
             ]
@@ -605,10 +615,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyfifteen translation for Dutch - nl_nl",
+            "description": "WordPress twentyfifteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyfifteen"
             ]
@@ -624,10 +634,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyfourteen translation for Dutch - nl_nl",
+            "description": "WordPress twentyfourteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyfourteen"
             ]
@@ -643,10 +653,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentysixteen translation for Dutch - nl_nl",
+            "description": "WordPress twentysixteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentysixteen"
             ]
@@ -662,10 +672,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentyten translation for Dutch - nl_nl",
+            "description": "WordPress twentyten translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentyten"
             ]
@@ -681,10 +691,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentythirteen translation for Dutch - nl_nl",
+            "description": "WordPress twentythirteen translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentythirteen"
             ]
@@ -700,10 +710,10 @@
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
             },
             "type": "wordpress-language",
-            "description": "Wordpress twentytwelve translation for Dutch - nl_nl",
+            "description": "WordPress twentytwelve translations for Dutch - nl_nl",
             "keywords": [
                 "Translation",
-                "Wordpress",
+                "WordPress",
                 "nl_nl",
                 "twentytwelve"
             ]
@@ -783,12 +793,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "JmesPath\\": "src/"
-                },
                 "files": [
                     "src/JmesPath.php"
-                ]
+                ],
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -978,12 +988,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1026,18 +1036,18 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.3",
+            "version": "5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.3"
+                "reference": "tags/5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.7.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
@@ -1055,7 +1065,7 @@
                 "url": "https://downloads.wordpress.org/plugin/slideshow-jquery-image-gallery.zip?timestamp=1448124105"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/slideshow-jquery-image-gallery/"
@@ -1073,7 +1083,7 @@
                 "url": "https://downloads.wordpress.org/theme/almasi.1.0.4.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/almasi/"
